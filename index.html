@@ -6,16 +6,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>안녕하세요, **[이름]**입니다</h1>
-        <p>열정적인 개발자이자 학습자입니다.</p>
-    </header>
-    <section>
-        <h2>소개</h2>
-        <ul>
-            <li>**기술:** HTML, CSS, JavaScript</li>
-            <li>**목표:** 사용자 친화적인 웹 만들기</li>
-        </ul>
-    </section>
-</body>
-</html>
+    export default function SelfIntroWebsite() {
+  return (
+    <div className="min-h-screen bg-gray-100 flex items-center justify-center p-6">
+      <div className="max-w-2xl w-full bg-white rounded-3xl shadow-xl p-8 text-center">
+        <img
+          src="https://via.placeholder.com/150"
+          alt="profile"
+          className="w-36 h-36 rounded-full mx-auto shadow-md mb-6"
+        />
+        <h1 className="text-4xl font-bold mb-2">안녕하세요 👋</h1>
+        <p className="text-lg text-gray-600 mb-6">평범한 일상을 담은 개인 소개 웹사이트입니다.</p>
+
+        <div className="grid gap-4 text-left">
+          <div className="bg-gray-50 rounded-2xl p-4">
+            <h2 className="text-xl font-semibold mb-2">이름</h2>
+            <p>김환서</p>
+          </div>
+        <button className="mt-8 px-6 py-3 bg-black text-white rounded-2xl hover:scale-105 transition">
+          더 알아보기
+        </button>
+      </div>
+    </div>
+  );
+}
